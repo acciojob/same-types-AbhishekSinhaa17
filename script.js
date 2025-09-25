@@ -1,7 +1,7 @@
 function isSameType(value1, value2) {
   //your js code here
-  if (!isNaN(value1) && value1.trim() !== "") value1 = Number(value1);
-  if (!isNaN(value2) && value2.trim() !== "") value2 = Number(value2);
+   if (!isNaN(value1) && String(value1).trim() !== "") value1 = Number(value1);
+  if (!isNaN(value2) && String(value2).trim() !== "") value2 = Number(value2);
 
   if (Number.isNaN(value1) && Number.isNaN(value2)) {
     return true;
